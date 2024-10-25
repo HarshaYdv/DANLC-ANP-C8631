@@ -1,0 +1,18 @@
+🚗 Revving Up Data Insights: Used Car Price Analysis Project
+Hello and welcome! Buckle up as we take you through our journey of exploring used car prices with Python! 🐍✨ My teammate Harsha and I worked together on this project using Google Colab to dive deep into a Kaggle dataset of used car prices, aiming to transform raw data into a well-oiled machine ready for insights. Here’s how we took it for a spin:
+
+🚗 Setting Up the Drive: We started by syncing Google Colab with Google Drive, giving us smooth access to our dataset and the flexibility to save progress.
+
+📥 Data Import & Backup: First things first! We imported our dataset and saved a backup (just in case) to ensure that we always had a clean copy to reference.
+
+🔍 Getting Under the Hood: We explored the data, inspecting every detail with describe() and unique(), which gave us our first look under the hood! This helped us catch a few snags, like:
+-Data Type Mismatch: Mileage and price values were strangely stored as text.
+-Extra Parts: The first column was just a combo of Car Make and Model, so we dropped it.
+-Unrelated Parts: A few rows had strange values like "BS IV" or "105 bhp" where they didn’t belong!
+🛠️ Tuning and Polishing: We cleaned things up by removing duplicate entries, transforming object-type integers into numeric formats, and deleting oddball values in columns like Transmission Type.
+
+🔧 Prepping for Performance: Here, we kicked out any remaining non-numeric values, tweaked columns to match data types, and smoothed out some bumps (outliers) in our numerical data.
+
+📊 Taking It for a Test Drive (EDA): Using ydata_profiling, we gave the data a thorough inspection! 🚗💨 We dug into correlations and consistency, shedding unnecessary columns like Torque and Power, which turned out to be overly related.
+
+🎨 Visualizing the Road Ahead: Finally, we brought out Matplotlib for visuals. We mapped histograms, box plots, and pie charts that added color and clarity to our data journey, making trends and patterns pop out. 📈🌈
